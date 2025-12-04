@@ -246,9 +246,17 @@ export function getCompatibleCamouflages(message: Message): EncoderInfo[] {
   const producedBy = message.metadata.producedBy;
   const sourceSymbols = message.metadata.symbols as [string, string] | undefined;
 
-  // Récupérer le produces de l'encodeur source (avec range si disponible)
+  // Récupérer l'encodeur source pour customCamouflages et range
   const sourceEncoder = producedBy ? getEncoderDef(producedBy) : null;
-  const produces = sourceEncoder?.produces;
+
+  // Construire produces effectif : utiliser producedType raffiné des metadata
+  // mais conserver range de la définition de l'encodeur
+  const produces: MessageClass | undefined = message.metadata.producedType
+    ? {
+        type: message.metadata.producedType as MessageClass['type'],
+        range: sourceEncoder?.produces?.range,
+      }
+    : sourceEncoder?.produces;
 
   // 1. Ajouter les camouflages spécifiques de l'encodeur en premier
   if (sourceEncoder?.customCamouflages) {
