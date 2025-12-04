@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- F : étoile à 6 pics -->
+  <polygon fill="black" points="100.0,5.0 125.0,56.7 182.3,52.5 150.0,100.0 182.3,147.5 125.0,143.3 100.0,195.0 75.0,143.3 17.7,147.5 50.0,100.0 17.7,52.5 75.0,56.7"/>
+</svg>

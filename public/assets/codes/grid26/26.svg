@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 26 : 2 dizaine(s), 6 unité(s) -->
+  <g fill="black">
+    <rect x="20" y="100" width="53" height="80" />
+    <rect x="20" y="20" width="53" height="80" />
+    <rect x="73" y="148" width="54" height="32" />
+    <rect x="73" y="116" width="54" height="32" />
+    <rect x="73" y="84" width="54" height="32" />
+    <rect x="73" y="52" width="54" height="32" />
+    <rect x="73" y="20" width="54" height="32" />
+    <rect x="127" y="148" width="53" height="32" />
+  </g>
+  <g stroke="black" stroke-width="4" stroke-linecap="round" fill="none">
+    <!-- Cadre extérieur -->
+    <rect x="20" y="20" width="160" height="160" />
+    <!-- Séparations colonnes -->
+    <line x1="73" y1="20" x2="73" y2="180" />
+    <line x1="127" y1="20" x2="127" y2="180" />
+    <!-- Séparation dizaines (2 cases) -->
+    <line x1="20" y1="100" x2="73" y2="100" />
+    <!-- Séparations unités milieu (5 cases) -->
+    <line x1="73" y1="52" x2="127" y2="52" />
+    <line x1="73" y1="84" x2="127" y2="84" />
+    <line x1="73" y1="116" x2="127" y2="116" />
+    <line x1="73" y1="148" x2="127" y2="148" />
+    <!-- Séparations unités droite (5 cases) -->
+    <line x1="127" y1="52" x2="180" y2="52" />
+    <line x1="127" y1="84" x2="180" y2="84" />
+    <line x1="127" y1="116" x2="180" y2="116" />
+    <line x1="127" y1="148" x2="180" y2="148" />
+  </g>
+</svg>

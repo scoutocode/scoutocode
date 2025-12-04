@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- heptagone : polygone à 7 côtés -->
+  <polygon fill="black" points="100.0,10.0 170.4,43.9 187.7,120.0 139.0,181.1 61.0,181.1 12.3,120.0 29.6,43.9"/>
+</svg>
